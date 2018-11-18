@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/gregory/demo_project/demo/demo.sch</source>
+    <date>Sun 18 Nov 2018 16:51:32 GMT</date>
+    <tool>Eeschema 6.0.0-rc1-unknown-2fdf13a~66~ubuntu16.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>demo.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="IC1">
+      <value>555</value>
+      <footprint>agg:SOIC-8</footprint>
+      <fields>
+        <field name="Farnell">9589880</field>
+      </fields>
+      <libsource lib="agg-kicad" part="555" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BF1DACA</tstamp>
+    </comp>
+    <comp ref="BT1">
+      <value>Battery</value>
+      <footprint>agg:SIL-254P-02</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Battery" description="Multiple-cell battery"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BF1F118</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>agg:0603-LED</footprint>
+      <libsource lib="agg-kicad" part="LED" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BF219BC</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>1k</value>
+      <footprint>agg:0603</footprint>
+      <libsource lib="agg-kicad" part="R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BF22212</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>1k</value>
+      <footprint>agg:0603</footprint>
+      <libsource lib="agg-kicad" part="R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BF24187</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>1k</value>
+      <footprint>agg:0603</footprint>
+      <libsource lib="agg-kicad" part="R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BF2474C</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>C</value>
+      <footprint>agg:0603</footprint>
+      <libsource lib="agg-kicad" part="C" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BF27100</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>C</value>
+      <footprint>agg:0603</footprint>
+      <libsource lib="agg-kicad" part="C" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BF27DB9</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Device" part="Battery">
+      <description>Multiple-cell battery</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="agg-kicad" part="555">
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">555</field>
+        <field name="Footprint">agg:SOIC-8</field>
+        <field name="Farnell">9589880</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="TRIG" type="input"/>
+        <pin num="3" name="OUT" type="output"/>
+        <pin num="4" name="~RST" type="input"/>
+        <pin num="5" name="CTRL" type="input"/>
+        <pin num="6" name="THR" type="input"/>
+        <pin num="7" name="DIS" type="output"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="agg-kicad" part="C">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="agg-kicad" part="LED">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="agg-kicad" part="R">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library//Device.lib</uri>
+    </library>
+    <library logical="agg-kicad">
+      <uri>/home/gregory/demo_project/demo/../agg-kicad/agg-kicad.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(C1-Pad2)">
+      <node ref="C1" pin="2"/>
+      <node ref="IC1" pin="6"/>
+      <node ref="IC1" pin="2"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="2" name="Net-(IC1-Pad7)">
+      <node ref="R1" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="IC1" pin="7"/>
+    </net>
+    <net code="3" name="GND">
+      <node ref="BT1" pin="2"/>
+      <node ref="C2" pin="1"/>
+      <node ref="IC1" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="4" name="Net-(C2-Pad2)">
+      <node ref="IC1" pin="5"/>
+      <node ref="C2" pin="2"/>
+    </net>
+    <net code="5" name="5v">
+      <node ref="IC1" pin="4"/>
+      <node ref="R1" pin="1"/>
+      <node ref="IC1" pin="8"/>
+      <node ref="BT1" pin="1"/>
+    </net>
+    <net code="6" name="Net-(D1-Pad1)">
+      <node ref="R3" pin="1"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="7" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="IC1" pin="3"/>
+    </net>
+  </nets>
+</export>

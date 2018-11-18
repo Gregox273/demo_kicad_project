@@ -1,0 +1,35 @@
+Bill Of Materials
+=================
+
+Source file: demo.xml
+Date: 2018-11-18T16:51:32.527993
+
+Parts Missing Footprints
+------------------------
+
+
+Parts Missing Order Codes
+-------------------------
+BT1    Battery         agg:SIL-254P-02
+D1     LED             agg:0603-LED
+R3     1k              agg:0603
+R1     1k              agg:0603
+R2     1k              agg:0603
+C1     C               agg:0603
+C2     C               agg:0603
+
+Inconsistent Order Codes
+------------------------
+
+
+Vendor Specific BOMs
+--------------------
+  Farnell
+  ~~~~~~~
+9589880,1,1x 555 SOIC-8
+
+
+Assembly BOM
+------------
+9589880              1   555             SOIC-8          IC1
+
